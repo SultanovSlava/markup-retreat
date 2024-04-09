@@ -14,28 +14,32 @@
 }
 
 
-input[type="radio"] {
+.rating input[type="radio"] {
     width: 0;
     height: 0;
 }
 
 .stars:hover {
-    background-image: url("img/star.png");
+    background-image: url("img/star-empty.png"), url("img/star.png");
+    background-repeat: repeat-x, repeat;
     background-size: 100px;
 }
 
 input[type="radio"]:hover ~ input[type="radio"] + label {
-    background-image: url("img/star.png");
+    background-image: url("img/star-empty.png"), url("img/star.png");
+    background-repeat: repeat-x, repeat;
     background-size: 100px;
 }
 
 input[type="radio"]:checked + label {
-    background-image: url("img/star.png");
+    background-image: url("img/star-empty.png"), url("img/star.png");
+    background-repeat: repeat-x, repeat;
     background-size: 100px;
 }
 
 input[type="radio"]:checked ~ input[type="radio"] + label {
-    background-image: url("img/star.png");
+    background-image: url("img/star-empty.png"), url("img/star.png");
+    background-repeat: repeat-x, repeat;
     background-size: 100px;
 }
 
