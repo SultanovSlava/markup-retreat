@@ -1,1 +1,41 @@
-/* Пиши стили тут */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 100px;
+}
+
+.stars {
+    background-image: url("img/star-empty.png");
+    display: flex;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+
+input[type="radio"] {
+    width: 0;
+    height: 0;
+}
+
+.stars:hover {
+    background-image: url("img/star.png");
+    background-size: 100px;
+}
+
+input[type="radio"]:hover ~ input[type="radio"] + label {
+    background-image: url("img/star.png");
+    background-size: 100px;
+}
+
+input[type="radio"]:checked + label {
+    background-image: url("img/star.png");
+    background-size: 100px;
+}
+
+input[type="radio"]:checked ~ input[type="radio"] + label {
+    background-image: url("img/star.png");
+    background-size: 100px;
+}
+
